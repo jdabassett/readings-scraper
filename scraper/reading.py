@@ -46,8 +46,8 @@ def format_text(title, list_links, list_question):
     for link in list_links:
         str_return += f"\n---\n\n## [**{link[0]}:**]({link[1]})\n\n"
     str_return += f"\n---\n\n## READING QUESTIONS:\n\n"
-    for question in list_question:
-        str_return += f"\n\t1. Prompt: {question}\n\t\t*Solution:\n\n"
+    for index, question in enumerate(list_question):
+        str_return += f"\n\t{index+1}. Prompt: {question}\n\t\tSolution:\n\n"
     str_return += f"---\n\n## **What I want to learn more about:**\n\n\t1.\n\n---\n---\n---\n"
     return str_return
 
