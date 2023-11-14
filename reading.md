@@ -1,5 +1,5 @@
 
-# **Reading Notes: Data Visualization**
+# **Reading Notes: Automation**
 
 
 ## Why are these reading important?
@@ -10,22 +10,32 @@
 
 ---
 
-## [**Matplotlib Tutorial:**](https://www.labri.fr/perso/nrougier/teaching/matplotlib/)
+## [**Python Regular Expressions Tutorial:**](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial)
 
 
 ---
 
-## [**Seaborn Tutorial:**](https://seaborn.pydata.org/tutorial.html)
+## [**shutil:**](https://pymotw.com/3/shutil/)
 
 
 ---
 
-## [**Bokeh Tutorial:**](https://mybinder.org/v2/gh/bokeh/bokeh-notebooks/master?filepath=tutorial%2F00%20-%20Introduction%20and%20Setup.ipynb)
+## [**os:**](https://pymotw.com/3/os/)
 
 
 ---
 
-## [**Seaborn Cheat Sheet:**](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
+## [**Automation Ideas:**](https://www.youtube.com/watch?v=qbW6FRbaSl0&t=69s)
+
+
+---
+
+## [**Automating Your Browser and Desktop Apps:**](https://www.youtube.com/watch?v=dZLyfbSQPXI)
+
+
+---
+
+## [**Watchdog:**](https://pythonhosted.org/watchdog/)
 
 
 ---
@@ -33,19 +43,15 @@
 ## READING QUESTIONS:
 
 
-	1. Prompt: Seaborn Cheat Sheet
+	1. Prompt: How can you use regular expressions in Python to search for specific patterns in a string, and what is the primary module to work with them?
 		*Solution:
 
 
-	1. Prompt: What are the key differences between Matplotlib, Seaborn, and Bokeh libraries in terms of their features and use cases? Provide an example of a specific visualization that is more suitable for each library.
+	1. Prompt: What is the purpose of the shutil module in Python, and provide an example of a common use case for file or directory management with this module?
 		*Solution:
 
 
-	1. Prompt: In the Seaborn library, what are the main functions to create relational, categorical, and distribution plots? Briefly explain the purpose of each type of plot and provide an example use case.
-		*Solution:
-
-
-	1. Prompt: Discuss the role of the Seaborn Cheat Sheet in a Python developer’s workflow. What are some key sections or elements featured in the cheat sheet that can help a developer quickly reference Seaborn functionalities?
+	1. Prompt: Compare and contrast the os and shutil modules. When would you choose to use one over the other?
 		*Solution:
 
 ---

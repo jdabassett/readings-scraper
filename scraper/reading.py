@@ -26,17 +26,17 @@ def scrap_code_fellows_reading(str_url:str, str_username:str, str_password:str):
 
         # retrieve all the links
         list_link_locators = obj_page.frame_locator('xpath=//*[@id="discussion_topic"]/div[1]/div[2]/div/p[1]/iframe').get_by_role("link").all()
-        list_link_dict = []
+        list_links_tup = []
         for link_locator in list_link_locators:
             str_link = link_locator.inner_text()
             str_url = link_locator.get_attribute('href')
-            list_link_dict.append((str_link,str_url))
+            list_links_tup.append((str_link,str_url))
 
         # retrieve all the questions
         list_questions = obj_page.frame_locator('xpath=//*[@id="discussion_topic"]/div[1]/div[2]/div/p[1]/iframe').get_by_role("listitem").all_inner_texts()
 
         obj_browser.close()
-    return str_title, list_link_dict, list_questions
+    return str_title, list_links_tup, list_questions
 
 
 def format_text(title, list_links, list_question):
@@ -57,8 +57,8 @@ if __name__ == "__main__":
     str_password = os.getenv('canvas_password')
     str_clipboard = str(pyperclip.paste())
     if "https" in str_clipboard or "canvas" in str_clipboard or "discussion_topics" in str_clipboard:
-        str_title, list_link_dict, list_questions = scrap_code_fellows_reading(str_clipboard, str_username, str_password)
-        str_full = format_text(str_title, list_link_dict, list_questions)
+        str_title, list_links_tup, list_questions = scrap_code_fellows_reading(str_clipboard, str_username, str_password)
+        str_full = format_text(str_title, list_links_tup, list_questions)
         with open('reading.md',"w") as file:
             file.write(str_full)
     else:
